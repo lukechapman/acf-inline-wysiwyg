@@ -22,7 +22,7 @@ This ACF field type is compatible with:
 * Initial release.
 
 ### To-do
-[ ] Add options for Single and Multiline text
-[ ] Add option to define toolbar formats
-[ ] Add option to define theme
+- [ ] Add options for Single and Multiline text
+- [ ] Add option to define toolbar formats
+- [ ] Add option to define theme
 
