@@ -1,0 +1,13 @@
+.inline-wysiwyg.medium-editor-element{
+    border: 1px solid #ddd;
+    padding: 3px 5px;
+    min-height: 20px;
+}
+
+.inline-wysiwyg.medium-editor-element p{
+	margin: 0;
+}
+
+.medium-editor-toolbar{
+	z-index: 9999;
+}
