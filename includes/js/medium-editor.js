@@ -1,7 +1,7 @@
 /*global self, document, DOMException */
 
 /* 
-Version: 5.20.2
+Version: 5.21.0
 */
 
 /*! @source http://purl.eligrey.com/github/classList.js/blob/master/classList.js */
