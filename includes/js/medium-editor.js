@@ -1,5 +1,9 @@
 /*global self, document, DOMException */
 
+/* 
+Version: 5.20.2
+*/
+
 /*! @source http://purl.eligrey.com/github/classList.js/blob/master/classList.js */
 
 // Full polyfill for browsers with no classList support

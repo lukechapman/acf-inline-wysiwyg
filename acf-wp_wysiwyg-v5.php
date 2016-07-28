@@ -9,6 +9,7 @@
 *  @extends		acf_field
 *  @package		ACF
 *  @subpackage	Fields
+*  @version		1.0.1
 */
 
 if( ! class_exists('acf_field_inline_wysiwyg') ) :
