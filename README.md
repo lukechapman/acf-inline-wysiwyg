@@ -18,6 +18,9 @@ This ACF field type is compatible with:
 
 ### Changelog
 
+**1.0.1**
+* [Tweak] Remove redundant call to `setContent`
+
 **1.0.0**
 * Initial release.
 

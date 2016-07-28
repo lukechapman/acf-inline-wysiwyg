@@ -4,7 +4,7 @@
 Plugin Name: Advanced Custom Fields: Inline WYSIWYG Field
 Plugin URI: https://github.com/lukechapman/acf-inline-wysiwyg
 Description: Adds an inline WYSIWYG field (using Medium Editor) to the Advanced Custom Fields plugin.
-Version: 1.0.0
+Version: 1.0.1
 Author: Luke Chapman
 Author URI: http://github.com/lukechapman
 License: GPLv2 or later
