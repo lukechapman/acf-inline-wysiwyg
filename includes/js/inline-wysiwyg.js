@@ -14,7 +14,6 @@
 
 	acf.add_action('load', function( $el ){
 		var editor = new MediumEditor($el.find('.inline-wysiwyg'), options)
-		editor.setContent()
 	});
 
 })(jQuery);
