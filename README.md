@@ -18,6 +18,10 @@ This ACF field type is compatible with:
 
 ### Changelog
 
+**1.0.2**
+* [Fix] JS update to fix an issue with initialising MediumEditor on appended input fields
+* [Fix] For #1
+
 **1.0.1**
 * [Tweak] Remove redundant call to `setContent`
 

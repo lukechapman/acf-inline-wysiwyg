@@ -1,5 +1,5 @@
 /* 
-Version: 1.0.1
+Version: 1.0.2
 */
 
 (function($) {
@@ -12,12 +12,21 @@ Version: 1.0.1
         }
     };
 
-	acf.add_action('append', function( $el ){
-		var editor = new MediumEditor($el.find('.inline-wysiwyg'), options)
-	});
+    if(typeof acf !== 'undefined'){
 
-	acf.add_action('load', function( $el ){
-		var editor = new MediumEditor($el.find('.inline-wysiwyg'), options)
-	});
+		acf.add_action('append', function( $el ){
+			new MediumEditor($el.find('.inline-wysiwyg'), options);
+		});
+
+		acf.add_action('load', function( $el ){
+			$el.find('.inline-wysiwyg').each(function(){
+				var $input = $(this);
+				if( $input.val() !== '' ){
+					new MediumEditor($input, options);
+				}
+			});
+		});
+		
+	}
 
 })(jQuery);

@@ -9,7 +9,7 @@
 *  @extends		acf_field
 *  @package		ACF
 *  @subpackage	Fields
-*  @version		1.0.1
+*  @version		1.0.2
 */
 
 if( ! class_exists('acf_field_inline_wysiwyg') ) :
@@ -139,19 +139,9 @@ class acf_field_inline_wysiwyg extends acf_field {
 		
 		// bail early if no value
 		if( empty($value) ) {
-			
 			return $value;
-		
 		}
-		
-		
-		// apply filters
-		//$value = apply_filters( 'acf_the_content', $value );
-		
-		// follow the_content function in /wp-includes/post-template.php
-		//$value = str_replace(']]>', ']]&gt;', $value);
-		
-	
+
 		return html_entity_decode($value);
 		
 	}
