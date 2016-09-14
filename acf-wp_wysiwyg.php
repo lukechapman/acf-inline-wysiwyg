@@ -12,11 +12,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 function inline_wysiwyg_enqueue_scripts() {
-	wp_enqueue_style( 'medium-editor-css', plugin_dir_url( __FILE__ ) . '/includes/css/medium-editor.css', array(), '5.21.0', null);
-	wp_enqueue_style( 'medium-editor-css-theme', plugin_dir_url( __FILE__ ) . '/includes/css/themes/beagle.css', array(), '5.21.0', null);
-	wp_enqueue_style( 'inline-wysiwyg-css', plugin_dir_url( __FILE__ ) . '/includes/css/inline-wysiwyg.css', array(), '5.21.0', null);
-	wp_enqueue_script( 'medium-editor-js', plugin_dir_url( __FILE__ ) . '/includes/js/medium-editor.min.js', array(), '5.21.0', true );
-	wp_enqueue_script( 'inline-wysiwyg-js', plugin_dir_url( __FILE__ ) . '/includes/js/inline-wysiwyg.js', array('jquery', 'medium-editor-js'), '1.0.2', true );
+	wp_enqueue_style( 'medium-editor-css', plugin_dir_url( __FILE__ ) . 'includes/css/medium-editor.css', array(), '5.21.0', null);
+	wp_enqueue_style( 'medium-editor-css-theme', plugin_dir_url( __FILE__ ) . 'includes/css/themes/beagle.css', array(), '5.21.0', null);
+	wp_enqueue_style( 'inline-wysiwyg-css', plugin_dir_url( __FILE__ ) . 'includes/css/inline-wysiwyg.css', array(), '5.21.0', null);
+	wp_enqueue_script( 'medium-editor-js', plugin_dir_url( __FILE__ ) . 'includes/js/medium-editor.min.js', array(), '5.21.0', true );
+	wp_enqueue_script( 'inline-wysiwyg-js', plugin_dir_url( __FILE__ ) . 'includes/js/inline-wysiwyg.js', array('jquery', 'medium-editor-js'), '1.0.2', true );
 }
 
 add_action( 'acf/input/admin_enqueue_scripts', 'inline_wysiwyg_enqueue_scripts', 10, 1 );
