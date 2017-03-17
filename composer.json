@@ -1,0 +1,25 @@
+{
+	"name": "lukechapman/acf-inline-wysiwyg",
+	"description": "Advanced Custom Fields: Inline WYSIWYG Field",
+	"keywords": [
+		"acf",
+		"wysiwyg",
+		"wordpress",
+		"plugin"
+	],
+	"homepage": "https://github.com/lukechapman/acf-inline-wysiwyg",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Luke Chapman",
+			"email": "luke@lkc-designs.com",
+			"homepage": "https://github.com/lukechapman/acf-inline-wysiwyg",
+			"role": "Developer"
+		}
+	],
+	"type": "wordpress-plugin",
+	"require": {
+		"php": ">=5.3.2",
+		"composer/installers": "1.0.*@dev"
+	}
+}
