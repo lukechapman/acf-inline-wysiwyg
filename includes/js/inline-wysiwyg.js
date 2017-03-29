@@ -61,23 +61,6 @@ Version: 1.0.2
 			return;
 		}
 
-		var $key = $el.data('key');
-		var $uniqid = acf.get_uniqid();
-		var $data = $el.find('div[data-key="medium_editor_'+$key+'"]').first();
-
-		var $delay = $data.data('delay');
-		if ($delay == 1 && !$textarea.hasClass('focused')) {
-			// dealy init
-			$el.find('.acf-label label').append('<span class="medium-editor-delay-init">Click to Initialize MediumEditor</span>');
-			$textarea.focus(function(e) {
-				$textarea.addClass('focused');
-				$el = $(e.target).closest('.acf-field');
-				$el.find('.acf-label label span.medium-editor-delay-init').remove();
-				initialize_acf_medium_editor_field($el);
-			});
-			return;
-		}
-
 		var editor = new MediumEditor($selector, options);
 
 		if (!editor.elements.length) {
@@ -89,6 +72,7 @@ Version: 1.0.2
 			$($selector).trigger('change');
 		});
 	}
+
 	if(typeof acf.add_action !== 'undefined') {
 		acf.add_action('ready append', function( $el ){
 			acf.get_fields({ type : 'inline_wysiwyg'}, $el).each(function(){
