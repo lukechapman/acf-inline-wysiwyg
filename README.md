@@ -1,3 +1,7 @@
+# Update (21/11/17): #
+### Another version of the same concept has spawned that is 100 times better, please visit https://github.com/Hube2/acf-medium-editor ###
+
+
 ## Advanced Custom Fields: Inline WYSIWYG Field
 
 ### Description
